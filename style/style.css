@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --color-primario: #E5E5E5;
+    --color-segundario:#0A3871;
+    --color-terciario: white;
+    --color-boton-primario:#D8DFE8;
+    --fuente-inter:"Inter", sans-serif;
+}
+
+body{
+    background-color: var(--color-primario);
+    color: var(--color-segundario);
+    font-family: var(--fuente-inter) ;
+    box-sizing: border-box;
+
+}
+header{
+    display: flex;
+    justify-content: center;
+}
+ 
+
+/*-------seccion de texto ingresado-----------*/
+.contenido_principal{
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    justify-content: center ;
+    gap: 80px;
+}
+.contenido_principal_texto{
+    /*width: 615px;*/
+    display: flex;
+    flex-direction: column;
+}
+.texto_ingresado{
+    font-size: 32px;
+    font-family: var(--fuente-inter);
+    color: var(--color-segundario);
+    background-color: var(--color-terciario);    
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 6px -6px gray;
+}
+
+.mensaje_advertencia{
+    font-size: 12px;
+    font-family: var(--fuente-inter);
+    padding: 400px 0 16px 0;
+}
+
+.boton_encriptar_desencriptar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.boton{
+    width: 328px;
+    height: 67px;
+    box-shadow: none;
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    background: var(--color-boton-primario);
+    border: 1px solid var(--color-segundario);
+    border-radius: 24px;
+}
+
+
+/*----------seccion de visualizacion---------------------*/
+.visualizacion{
+    width: 400px;
+    height: 944px;
+    background-color: var(--color-terciario);
+    border-radius: 32px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.visualizacion_texto{
+    font-family: var(--fuente-inter);
+    font-size: 20px;
+    font-weight: bold;  
+    padding: 5%;
+    text-align: center;
+}
+.mensaje{
+    font-size: 16px;
+    font-family: var(--fuente-inter);
+    color: var(--color-segundario);
+    padding: 5%;
+    text-align: center;
+}
+#copiar{
+    padding: 0 0 0 0;
+}
+
+
+footer{
+    background-color: var(--color-primario);
+    padding: 24px;
+    color:var(--color-segundario);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: 15px;
+}
+
+.boton:hover{
+    background-color: var(--color-segundario);
+    color: var(--color-primario);
+}
+
+
